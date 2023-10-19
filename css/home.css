@@ -80,3 +80,76 @@ body {
     border: none;
     cursor: pointer;
 }
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px; /* Adjust padding as needed */
+}
+
+.cta-group {
+    flex: 1;
+    text-align: left;
+}
+
+.cta-group h1 {
+    font-size: 40px;
+    color: #002D4F;
+}
+
+.cta-group p {
+    font-size: 20px;
+    color: #555;
+}
+
+
+.image-group {
+    flex: 1;
+    text-align: right;
+}
+
+.image-group img {
+    width: 367px;
+    height: 427px;
+}
+
+/* BUTTON STYLES */
+
+.hero-button {
+    width: 253px;
+    height: 66px;
+    border-radius: 54px;
+    border: 1px solid #002D4F;
+    background: #FFF;
+    color: #002D4F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.hero-button::after {
+    content: "\2192";
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    background: #002D4F;
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
