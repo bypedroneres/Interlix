@@ -174,13 +174,16 @@ body {
 
 #services-cards {
     display: flex;
-    gap: 10px; /* make this 100px later */
+    gap: 20px;
     margin-top: 20px;
+    align-items: flex-start;
+    justify-content:space-between
 }
 
 .service-card {
-    width: 526px;
+    width: 480px;
     height: 247px;
+    flex-wrap: wrap;
     border-radius: 22px;
     background: #FBFBFA;
     display: flex;
@@ -189,8 +192,9 @@ body {
 }
 
 .service-card-content {
-    width: 450px;
+    width: 500px;
     height: 181px;
+    padding: 20px;
 }
 
 .service-card-title {
@@ -218,6 +222,8 @@ body {
     font-size: 15px;
     text-align: left;
 }
+
+/* HOW IT WORKS SECTION */
 
 #how-it-works-section {
     background: #FBFBFA;
@@ -281,7 +287,6 @@ body {
 
 .cta-section {
     height: 114px;
-
     background-color: #002D4F;
     color: #FBFBFA;
     padding: 20px;
@@ -290,7 +295,9 @@ body {
 .cta-content {
     display: flex;
     color: #FBFBFA;
-    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
     align-items: center;
 }
 
@@ -339,3 +346,71 @@ body {
 .less-bold {
     font-weight: 400;
 }
+
+/* BENEFITS SECTION */
+
+.benefits-section {
+    background-color: #FBFBFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.benefits-section h2 {
+    font-size: 28px;
+    color: #002D4F;
+    font-family: Montserrat;
+    margin-bottom: 50px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.benefits-section img {
+    max-width: 100%;
+    max-height: 337px;
+    border-radius: 19px;
+    border-radius: 18px;
+    border: 1px solid #002D4F;
+    background: cover no-repeat;
+}
+
+/* BENEFITS CARDS */
+
+.benefits-card {
+    width: 196px;
+    height: 206px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    border: 1px solid #002D4F;
+    background: #FBFBFA;
+    margin-right: 20px;
+}
+
+.benefits-cards {
+    display: flex;
+    justify-content:space-around;
+}
+
+.benefits-card-content {
+    padding: 10px;
+}
+
+.benefits-card-content h3 {
+    font-size: 20px;
+    color: #002D4F;
+}
+
+.benefits-card-content p {
+    font-size: 12px;
+    color: #002D4F;
+}
+
+
