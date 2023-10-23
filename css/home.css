@@ -87,7 +87,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px; /* Adjust padding as needed */
+    padding: 40px; 
 }
 
 .cta-group {
@@ -149,7 +149,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 5px;
+    right: 4px;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -281,9 +281,10 @@ body {
 
 .cta-section {
     height: 114px;
-    width: 100%;
+
     background-color: #002D4F;
     color: #FBFBFA;
+    padding: 20px;
 }
 
 .cta-content {
@@ -330,7 +331,7 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    right: 5px;
+    right: 4px;
     top: 50%;
     transform: translateY(-50%);
 }
