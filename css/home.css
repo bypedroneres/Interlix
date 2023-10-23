@@ -277,3 +277,64 @@ body {
     margin-left: 10px;
 }
 
+/* CTA SECTION */
+
+.cta-section {
+    height: 114px;
+    width: 100%;
+    background-color: #002D4F;
+    color: #FBFBFA;
+}
+
+.cta-content {
+    display: flex;
+    color: #FBFBFA;
+    padding: 20px;
+    align-items: center;
+}
+
+.cta-text {
+    font-size: 20px;
+    text-align: left;
+    flex: 1;
+}
+
+.cta-button {
+    width: 253px;
+    height: 66px;
+    border-radius: 54px;
+    border: 1px solid #002D4F;
+    background: #FFF;
+    color: #002D4F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cta-button::after {
+    content: "\2192";
+    font-size: 24px;
+    width: 58px;
+    height: 58px;
+    background: #002D4F;
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.less-bold {
+    font-weight: 400;
+}
