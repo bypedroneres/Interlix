@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+    background: #FBFBFA;
 }
 
 /* HEADER */
@@ -31,7 +32,7 @@ body {
 }
 
 .navbar-2 {
-    background: #D9D9D9;
+    background: #FBFBFA;
     height: 83px;
     display: flex;
     justify-content: space-between;
@@ -123,7 +124,7 @@ body {
     height: 66px;
     border-radius: 54px;
     border: 1px solid #002D4F;
-    background: #FFF;
+    background: #FBFBFA;
     color: #002D4F;
     text-align: center;
     font-family: Montserrat;
@@ -143,7 +144,7 @@ body {
     width: 58px;
     height: 58px;
     background: #002D4F;
-    color: #FFF;
+    color: #FBFBFA;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -242,7 +243,6 @@ body {
 .cards-group {
     display: flex;
     justify-content: space-between;
-    
 }
 
 .card {
@@ -312,7 +312,7 @@ body {
     height: 66px;
     border-radius: 54px;
     border: 1px solid #002D4F;
-    background: #FFF;
+    background: #FBFBFA;
     color: #002D4F;
     text-align: center;
     font-family: Montserrat;
@@ -332,7 +332,7 @@ body {
     width: 58px;
     height: 58px;
     background: #002D4F;
-    color: #FFF;
+    color: #FBFBFA;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -406,6 +406,7 @@ body {
 .benefits-card-content h3 {
     font-size: 20px;
     color: #002D4F;
+    font-weight: 500;
 }
 
 .benefits-card-content p {
