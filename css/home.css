@@ -751,3 +751,7 @@ body {
 .footer p {
     font-size: 10px;
 }
+
+.footer svg {
+    cursor: pointer;
+}
