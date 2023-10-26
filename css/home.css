@@ -297,7 +297,7 @@ body {
     height: 114px;
     background-color: #002D4F;
     color: #FBFBFA;
-    padding: 20px;
+    padding: 40px;
 }
 
 .cta-content {
@@ -617,4 +617,95 @@ body {
     font-size: 15px;
     font-weight: 400;
     padding: 30px;
+}
+
+/* CTA SECTION 2 */
+
+.cta-section-2 {
+    background-color: #002D4F;
+    color: #FBFBFA;
+    padding: 40px;
+}
+
+.cta-content-2 {
+    display: flex;
+    color: #FBFBFA;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cta-text-2 {
+    text-align: left;
+    flex: 1;
+}
+
+.cta-text-2 p {
+    font-size: 15px;
+}
+
+.cta-text-2 h3 {
+    font-size: 35px;
+    font-weight: 600;
+    width: 689px;
+}
+
+.cta-button-2 {
+    width: 253px;
+    height: 66px;
+    border-radius: 54px;
+    border: 1px solid #002D4F;
+    background: #FBFBFA;
+    color: #002D4F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cta-button-2::after {
+    content: "\2192";
+    font-size: 24px;
+    width: 58px;
+    height: 58px;
+    background: #002D4F;
+    color: #FBFBFA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #DEE0E0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: #002D4F;
+}
+
+.footer-block {
+    text-align: left;
+}
+
+.footer h4 {
+    font-size: 15px;
+}
+
+.footer p {
+    font-size: 10px;
 }
