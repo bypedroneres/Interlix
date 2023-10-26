@@ -26,13 +26,36 @@ body {
     font-size: 16px;
 }
 
+/* NAVBAR 1 */
+
 .navbar-1 {
     background: #002D4F;
     height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
+.nav-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav-block svg {
+    margin-right: 5px;
+}
+
+.nav-text {
+    font-size: 10px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+/* NAVBAR 2 */
+
 .navbar-2 {
-    background: #FBFBFA;
     height: 83px;
     display: flex;
     justify-content: space-between;
@@ -48,8 +71,11 @@ body {
 .navbar-buttons ul {
     list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+    width: 500px;
 }
 
 .navbar-buttons li {
@@ -88,7 +114,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px; 
+    padding: 60px;
 }
 
 .cta-group {
@@ -264,9 +290,10 @@ body {
     border-radius: 19px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    text-align: left;
     border: 1px solid #002D4F;
     margin-bottom: 50px;
+    transition: background-color 0.3s;
 }
 
 .card:hover {
@@ -276,7 +303,7 @@ body {
 
 .card h3 {
     margin: 0;
-    font-weight: 300;
+    font-weight: 400;
     margin-top: 20px;
     margin-left: 10px;
 }
@@ -289,6 +316,15 @@ body {
 .card p {
     margin-top: 20px;
     margin-left: 10px;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 10px;
+    font-weight: 200;
 }
 
 /* CTA SECTION */
@@ -399,6 +435,13 @@ body {
     border: 1px solid #002D4F;
     background: #FBFBFA;
     margin-right: 20px;
+    color: #002D4F;
+    transition: background-color 0.3s;
+}
+
+.benefits-card:hover{
+    background-color: #002D4F;
+    color:#FBFBFA;
 }
 
 .benefits-cards {
@@ -412,13 +455,11 @@ body {
 
 .benefits-card-content h3 {
     font-size: 20px;
-    color: #002D4F;
     font-weight: 500;
 }
 
 .benefits-card-content p {
     font-size: 12px;
-    color: #002D4F;
 }
 
 /* CLIENTS SECTION */
@@ -501,7 +542,6 @@ body {
     transform: rotate(7.649deg);
 }
 
-
 .clients-card-content {
     width: 157px;
     display: flex;
@@ -573,7 +613,6 @@ body {
 
 .question-block {
     background-color: #FBFBFA;
-    border-bottom: 1px solid #002D4F;
 }
 
 .question-block-content {
@@ -603,8 +642,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FBFBFA;
-    background-color: #002D4F;
+    color: #002D4F;
+    border: 1px solid #002D4F;
+    background-color: #DEE0E0;
     transition: max-height 0.3s ease;
     max-height: 0; 
     overflow: hidden; 
@@ -616,7 +656,9 @@ body {
     justify-content: flex-start;
     font-size: 15px;
     font-weight: 400;
-    padding: 30px;
+    opacity: 0.5;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* CTA SECTION 2 */

@@ -6,3 +6,16 @@ function toggleAnswer(id) {
         answer.style.maxHeight = "0px";
     }
 }
+
+
+function showDescription(card) {
+    const description = card.querySelector(".description");
+    card.querySelector("h3").style.display = "none";
+    description.style.display = "block";
+}
+
+function hideDescription(card) {
+    const description = card.querySelector(".description");
+    card.querySelector("h3").style.display = "block";
+    description.style.display = "none";
+}
