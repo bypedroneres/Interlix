@@ -33,7 +33,7 @@ body {
     height: 28px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .nav-block {
@@ -61,11 +61,13 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    display: none;
 }
 
 .navbar-logo img {
     width: 280px;
     height: 51px;
+    display: none;
 }
 
 .navbar-buttons ul {
@@ -76,10 +78,12 @@ body {
     margin: 0;
     padding: 0;
     width: 500px;
+    display: none;
 }
 
 .navbar-buttons li {
     margin-right: 20px;
+    display: none;
 }
 
 .navbar-buttons a {
@@ -88,6 +92,7 @@ body {
     font-family: Montserrat;
     font-size: 15px;
     font-weight: 400;
+    display: none;
 }
 
 .job-hunting-button .button {
@@ -106,6 +111,7 @@ body {
     text-decoration: none;
     border: none;
     cursor: pointer;
+    display: none;
 }
 
 /* HERO SECTION */
@@ -114,7 +120,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    flex-direction: column;
+    padding: 40px;
 }
 
 .cta-group {
@@ -185,7 +192,6 @@ body {
 
 #services-section {
     background: #002D4F;
-    height: 521px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,9 +208,12 @@ body {
 #services-cards {
     display: flex;
     margin-top: 20px;
-    align-items: flex-start;
-    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
     width: 100%;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .service-card {
@@ -330,7 +339,6 @@ body {
 /* CTA SECTION */
 
 .cta-section {
-    height: 114px;
     background-color: #002D4F;
     color: #FBFBFA;
     padding: 40px;
@@ -342,13 +350,15 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .cta-text {
     font-size: 20px;
     text-align: left;
     flex: 1;
+    margin-bottom: 30px;
 }
 
 .cta-button {
@@ -421,8 +431,8 @@ body {
 }
 
 .benefits-section img {
-    width: 639px;
-    height: 405px;
+    width: 400px;
+    height: 300px;
     margin-bottom: 50px;
     border-radius: 25px;
     border: 1px solid #002D4F;
@@ -432,7 +442,8 @@ body {
 /* BENEFITS CARDS */
 
 .benefits-card {
-    width: 196px;
+    width: 396px;
+    margin-left: 20px;
     height: 206px;
     border-radius: 18px;
     border: 1px solid #002D4F;
@@ -449,7 +460,10 @@ body {
 
 .benefits-cards {
     display: flex;
-    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
 }
 
 .benefits-card-content {
@@ -488,7 +502,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 150px;
 }
@@ -683,7 +697,7 @@ body {
 .cta-section-2 {
     background-color: #002D4F;
     color: #FBFBFA;
-    padding: 40px;
+    padding: 20px;
 }
 
 .cta-content-2 {
@@ -706,9 +720,8 @@ body {
 }
 
 .cta-text-2 h3 {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
-    width: 689px;
 }
 
 .cta-button-2 {
@@ -755,18 +768,20 @@ body {
     display: flex;
     justify-content: space-around;
     color: #002D4F;
+    flex-direction: column;
 }
 
 .footer-block {
     text-align: left;
+
 }
 
 .footer h4 {
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .footer p {
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .footer svg {
