@@ -64,18 +64,17 @@ body {
 }
 
 .navbar-logo img {
-    width: 280px;
-    height: 51px;
+    width: fill;
+    height: fill;
 }
 
 .navbar-buttons ul {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    width: 500px;
 }
 
 .navbar-buttons li {
@@ -186,7 +185,6 @@ body {
 
 #services-section {
     background: #002D4F;
-    height: 521px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,13 +203,14 @@ body {
     margin-top: 20px;
     align-items: flex-start;
     justify-content:space-around;
+    flex-direction: row;
     width: 100%;
+    margin-bottom: 100px;
 }
 
 .service-card {
     width: 400px;
     height: 247px;
-    flex-wrap: wrap;
     border-radius: 22px;
     background: #FBFBFA;
     display: flex;
@@ -220,9 +219,7 @@ body {
 }
 
 .service-card-content {
-    width: 500px;
-    height: 181px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .service-card-title {
@@ -474,6 +471,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .clients-section h2 {
@@ -531,7 +529,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-3.363deg);
+    transform: rotate(-10.363deg);
 }
 
 .clients-card-4 {
@@ -544,7 +542,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(7.649deg);
+    transform: rotate(3.649deg);
 }
 
 .clients-card-content {
@@ -710,7 +708,6 @@ body {
 .cta-text-2 h3 {
     font-size: 35px;
     font-weight: 600;
-    width: 689px;
 }
 
 .cta-button-2 {
