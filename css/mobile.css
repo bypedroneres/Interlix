@@ -285,12 +285,13 @@ body {
 
 .cards-group {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .card {
-    width: 196px;
-    height: 206px;
+    width: 396px;
+    height: 100px;
     background-color: #FBFBFA;
     text-align: center;
     color: #002D4F;
@@ -688,6 +689,7 @@ body {
     font-size: 15px;
     font-weight: 400;
     opacity: 0.5;
+    padding: 20px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
