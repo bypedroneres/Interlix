@@ -33,7 +33,9 @@ body {
     height: 28px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .nav-block {
@@ -196,7 +198,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 40px;
 }
 
 #services-section h1 {
@@ -290,6 +292,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .card {
@@ -345,7 +348,7 @@ body {
 .cta-section {
     background-color: #002D4F;
     color: #FBFBFA;
-    padding: 40px;
+    padding: 30px;
 }
 
 .cta-content {
