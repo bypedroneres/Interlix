@@ -796,3 +796,8 @@ body {
 .footer svg {
     cursor: pointer;
 }
+
+
+.footer-block a {
+    text-decoration: none;
+}

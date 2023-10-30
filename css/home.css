@@ -754,6 +754,7 @@ body {
     display: flex;
     justify-content: space-around;
     color: #002D4F;
+    
 }
 
 .footer-block {
@@ -770,4 +771,8 @@ body {
 
 .footer svg {
     cursor: pointer;
+}
+
+.footer-block a {
+    text-decoration: none;
 }
