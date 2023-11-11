@@ -107,38 +107,102 @@ body {
     cursor: pointer;
 }
 
+/* SERVICES SECTION */
 
-/* UNDER CONSTRUCTION */
-
-/* styles.css */
-body {
-    background-color: #f4f4f4;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.under-construction {
-    background-color: #FBFBFA;
-}
-
-.ud-content {
+.services-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 710px;
-}
-
-h1 {
     color: #002D4F;
 }
 
-p {
-    color: #777;
+.services-section h2 {
+    font-weight: 500;
 }
 
+.services-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    border-radius: 48px;
+    border: 1px solid #002D4F;
+    transition: background-color 0.3s;
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.service-content h2 {
+    font-weight: 500;
+}
+
+.service:hover {
+    background-color: #002D4F;
+    color: #FBFBFA;
+}
+
+.picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+}
+
+.picture img {
+    display: flex;
+    height: 360px;
+}
+
+/* BUTTON STYLES */
+
+.hero-button {
+    width: 253px;
+    height: 66px;
+    border-radius: 54px;
+    border: 1px solid #002D4F;
+    background: #FBFBFA;
+    color: #002D4F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.hero-button::after {
+    content: "\2192";
+    font-size: 24px;
+    width: 58px;
+    height: 58px;
+    background: #002D4F;
+    color: #FBFBFA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 /* FOOTER */
 
 .footer {
@@ -147,7 +211,7 @@ p {
     display: flex;
     justify-content: space-around;
     color: #002D4F;
-    
+    margin-top: 50px;
 }
 
 .footer-block {
