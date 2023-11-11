@@ -117,8 +117,11 @@ body {
     color: #002D4F;
 }
 
-.services-section h2 {
-    font-weight: 500;
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .services-content {
@@ -146,11 +149,6 @@ body {
 
 .service-content h2 {
     font-weight: 500;
-}
-
-.service:hover {
-    background-color: #002D4F;
-    color: #FBFBFA;
 }
 
 .picture {
