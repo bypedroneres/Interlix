@@ -4,6 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     background: #FBFBFA;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -22,8 +23,6 @@ body {
     align-items: center;
     padding: 10px 20px;
     color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
 }
 
 /* NAVBAR 1 */
@@ -112,62 +111,40 @@ body {
     cursor: pointer;
 }
 
-/* SERVICES SECTION */
+/* HERO SECTION */
 
-.services-section {
+.hero {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #002D4F;
-    
-}
-
-.title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-}
-
-.services-content {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding: 30px;
-    gap: 30px;
+    padding: 60px;
 }
 
-.service {
-    display: flex;
-    flex-direction: column;
-    border-radius: 48px;
-    border: 1px solid #002D4F;
-    transition: background-color 0.3s;
+.cta-group {
+    flex: 1;
+    text-align: left;
 }
 
-.service-content {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
+.cta-group h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #002D4F;
 }
 
-.service-content h2 {
-    font-weight: 500;
+.cta-group p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #555;
 }
 
-.picture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 360px;
+.image-group {
+    flex: 1;
+    text-align: right;
 }
 
-.picture img {
-    display: flex;
-    height: 360px;
+.image-group img {
+    width: 367px;
+    height: 427px;
 }
 
 /* BUTTON STYLES */
@@ -193,6 +170,122 @@ body {
 
 .hero-button::after {
     content: "\2192";
+    font-size: 20px;
+    width: 58px;
+    height: 58px;
+    background: #002D4F;
+    color: #FBFBFA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* TALENT SECTION */
+
+.talent-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #002D4F;
+}
+
+.talent-section > h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.talent-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.banner {
+    padding-right: 160px;
+}
+
+.banner > img {
+    width: 400px;
+}
+
+.talent-description {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.talent-description > h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.talent-description > p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #555;
+}
+
+/* CTA SECTION 2 */
+
+.cta-section-2 {
+    background-color: #002D4F;
+    color: #FBFBFA;
+    padding: 40px;
+}
+
+.cta-content-2 {
+    display: flex;
+    color: #FBFBFA;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cta-text-2 {
+    text-align: left;
+    flex: 1;
+}
+
+.cta-text-2 p {
+    font-size: 15px;
+}
+
+.cta-text-2 h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cta-button-2 {
+    width: 253px;
+    height: 66px;
+    border-radius: 54px;
+    border: 1px solid #002D4F;
+    background: #FBFBFA;
+    color: #002D4F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cta-button-2::after {
+    content: "\2192";
     font-size: 24px;
     width: 58px;
     height: 58px;
@@ -216,7 +309,7 @@ body {
     display: flex;
     justify-content: space-around;
     color: #002D4F;
-
+    
 }
 
 .footer-block {
@@ -224,11 +317,12 @@ body {
 }
 
 .footer h4 {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .footer p {
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .footer svg {

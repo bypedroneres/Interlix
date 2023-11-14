@@ -4,6 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     background: #FBFBFA;
+    height: 100vh;
 }
 
 /* HEADER */
@@ -22,8 +23,6 @@ body {
     align-items: center;
     padding: 10px 20px;
     color: #ffffff;
-    font-weight: bold;
-    font-size: 16px;
 }
 
 /* NAVBAR 1 */
@@ -81,6 +80,11 @@ body {
     margin-right: 20px;
 }
 
+.navbar-buttons li:hover {
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
 .navbar-buttons a {
     text-decoration: none;
     color: #002D4F;; 
@@ -115,6 +119,7 @@ body {
     justify-content: center;
     flex-direction: row;
     margin-top: 50px;
+    padding: 40px;
 }
 
 .about-content {
@@ -122,20 +127,19 @@ body {
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-}
-
-.about-content img {
-    display: flex;
-    height: 5rem;
-    margin-left: -20px;
 }
 
 .about-content h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #002D4F;
+    max-width: 50rem;
+}
+
+.about-content p {
     font-size: 15px;
     font-weight: 200;
-    color: #002D4F;
-    padding: 30px;
+    color: gray;
     max-width: 50rem;
 }
 
@@ -166,6 +170,7 @@ body {
     color: #002D4F;
     font-weight: 500;
     margin-bottom: 50px;
+    font-size: 24px;
 }
 
 .profile-cards {
@@ -188,7 +193,7 @@ body {
 }
 
 .profile-card h4 {
-    font-size: 15px;
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 0px;
     color: #002D4F;
@@ -199,6 +204,47 @@ body {
     font-size: 12px;
     margin-top: 5px;
     opacity: 0.5;
+    font-weight: 300;
+}
+
+/* COLLEGE SECTION */
+
+.college-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.college-content {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+.college-section img {
+    height: 6rem;
+    padding: 100px;
+    margin-right: 30px;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+.college-section img:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.college-description h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #002D4F;
+}
+
+.college-description p{
+    font-size: 15px;
+    color: gray;
     font-weight: 300;
 }
 
@@ -230,7 +276,7 @@ body {
 }
 
 .cta-text-2 h3 {
-    font-size: 35px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -286,11 +332,12 @@ body {
 }
 
 .footer h4 {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .footer p {
-    font-size: 10px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .footer svg {

@@ -81,6 +81,11 @@ body {
     margin-right: 20px;
 }
 
+.navbar-buttons li:hover {
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
 .navbar-buttons a {
     text-decoration: none;
     color: #002D4F;; 
@@ -118,7 +123,8 @@ body {
 }
 
 .services-section h2 {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 .services-content {
@@ -146,6 +152,12 @@ body {
 
 .service-content h2 {
     font-weight: 500;
+    font-size: 20px;
+}
+
+.service-content p {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .service:hover {
