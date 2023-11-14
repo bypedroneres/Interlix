@@ -19,3 +19,4 @@ function hideDescription(card) {
     card.querySelector("h3").style.display = "block";
     description.style.display = "none";
 }
+

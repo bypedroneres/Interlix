@@ -141,7 +141,7 @@ body {
     flex-direction: column;
     border-radius: 48px;
     border: 1px solid #002D4F;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s ease;
 }
 
 .service-content {
@@ -163,6 +163,7 @@ body {
 .service:hover {
     background-color: #002D4F;
     color: #FBFBFA;
+    transform: rotate(5deg); 
 }
 
 .picture {

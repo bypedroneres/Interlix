@@ -111,6 +111,7 @@ body {
     cursor: pointer;
 }
 
+
 /* HERO SECTION */
 
 .hero {
@@ -145,7 +146,7 @@ body {
 .image-group img {
     width: 367px;
     height: 427px;
-    transition: transform 0.9s ease; /* Adjust the duration as needed */
+    transition: transform 0.9s ease;
 }
 
 .image-group img:hover {
@@ -309,7 +310,7 @@ body {
     text-align: left;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.141);
     margin-bottom: 50px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .card:hover {
