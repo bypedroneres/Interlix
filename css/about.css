@@ -111,6 +111,16 @@ body {
     cursor: pointer;
 }
 
+/* MEGA MENU  */
+
+.menu-button {
+    display: none;
+}
+    
+.mega-menu {
+    display: none;
+}
+
 /* ABOUT SECTION */
 
 .about-section {

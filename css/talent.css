@@ -111,6 +111,16 @@ body {
     cursor: pointer;
 }
 
+/* MEGA MENU  */
+
+.menu-button {
+    display: none;
+    }
+    
+    .mega-menu {
+    display: none;
+    }
+
 /* HERO SECTION */
 
 .hero {
@@ -193,6 +203,8 @@ body {
     justify-content: center;
     flex-direction: column;
     color: #002D4F;
+    width: 100%;
+
 }
 
 .talent-section > h2 {
@@ -203,26 +215,31 @@ body {
 .talent-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 40px;
 }
 
-.banner {
-    padding-right: 160px;
-}
-
 .banner > img {
-    width: 400px;
+    width: 20rem;
 }
 
 .talent-description {
     display: flex;
+    max-width: 600px;
     text-align: left;
     flex-direction: column;
+    border-radius: 19px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.141);
+    transition: transform 0.5s ease;
+}
+
+.talent-description:hover {
+    transform: scale(1.05);
 }
 
 .talent-description > h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     margin: 0;
 }

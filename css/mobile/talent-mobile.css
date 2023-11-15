@@ -29,94 +29,315 @@ body {
 /* NAVBAR 1 */
 
 .navbar-1 {
-    background: #002D4F;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-.nav-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.nav-block svg {
-    margin-right: 5px;
-}
-
-.nav-text {
-    font-size: 10px;
-    font-weight: 400;
-    margin-right: 20px;
+    display: none;
 }
 
 /* NAVBAR 2 */
 
 .navbar-2 {
-    height: 83px;
+    display: none;
+}
+
+/* MEGA MENU  */
+
+.nav-button {
+    background-color: #002D4F;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    top: 0px;
+    position: fixed;
+}
+
+.menu-button {
+    background-color:#002D4F;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    right: 20px;
+    top: 20px;
+    position: fixed;
+    color: #FBFBFA;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+.mega-menu {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #002D4F;
+    color: #FBFBFA;
     display: none;
+    z-index: 99;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
-.navbar-logo img {
-    width: 280px;
-    height: 51px;
-    display: none;
-}
-
-.navbar-buttons ul {
-    list-style: none;
+.mega-menu-columns {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    width: 500px;
-    display: none;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 150px;
 }
 
-.navbar-buttons li {
-    margin-right: 20px;
-    display: none;
+.mega-menu-column {
+    gap: 16px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.navbar-buttons a {
-    text-decoration: none;
-    color: #002D4F;; 
-    font-family: Montserrat;
-    font-size: 15px;
+.mega-menu-column a {
+    font-size: 30px;
     font-weight: 400;
-    display: none;
+    text-decoration: none;
+    color: #FBFBFA;
 }
 
-.job-hunting-button .button {
-    width: 159px;
-    height: 41px;
-    background: #002D4F;
-    color: #FFF;
+.mega-menu.active {
+    display: block;
+}
+
+body.mega-menu-active .fixed-header {
+    background-color: transparent;
+    color: transparent;
+}
+
+.mega-menu-columns-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 200px;
+}
+
+body.mega-menu-active .fixed-header .search-button,
+body.mega-menu-active .fixed-header .login-button {
+    color: transparent;
+    visibility: hidden;
+}
+
+body.mega-menu-active .fixed-header .logo img,
+body.mega-menu.active .fixed-header .login-button,
+body.mega-menu-active .fixed-header .search-button img {
+    color: transparent;
+    visibility: hidden;
+}
+
+.menu-icon {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.cta-group {
+    flex: 1;
+    text-align: left;
+}
+
+.cta-group h1 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #002D4F;
+}
+
+.cta-group p {
+    font-size: 20px;
+    color: #555;
+}
+
+
+.image-group {
+    flex: 1;
+    text-align: right;
+}
+
+.image-group img {
+    width: 367px;
+    height: 427px;
+}
+
+
+/* BUTTON STYLES */
+
+.hero-button {
+    width: 253px;
+    height: 66px;
+    border-radius: 54px;
+    border: 1px solid #002D4F;
+    background: #FBFBFA;
+    color: #002D4F;
     text-align: center;
     font-family: Montserrat;
-    font-size: 15px;
-    display: flex;
+    font-size: 20px;
     font-weight: 500;
-    border-radius: 9px;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    border: none;
     cursor: pointer;
-    display: none;
+    position: relative;
 }
 
+.hero-button::after {
+    content: "\2192";
+    font-size: 24px;
+    width: 58px;
+    height: 58px;
+    background: #002D4F;
+    color: #FBFBFA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
+/* TALENT SECTION */
+
+.talent-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: #002D4F;
+}
+
+.talent-section > h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.talent-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.banner > img {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.talent-description {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    border-radius: 19px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.141);
+    transition: transform 0.5s ease;
+}
+
+.talent-description:hover {
+    transform: scale(1.05);
+}
+
+.talent-description > h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.talent-description > p {
+    font-size: 15px;
+    font-weight: 300;
+    color: #555;
+}
+
+/* CTA SECTION 2 */
+
+.cta-section-2 {
+    background-color: #002D4F;
+    color: #FBFBFA;
+    padding: 20px;
+}
+
+.cta-content-2 {
+    display: flex;
+    color: #FBFBFA;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.cta-text-2 {
+    text-align: left;
+    flex: 1;
+}
+
+.cta-text-2 p {
+    font-size: 15px;
+}
+
+.cta-text-2 h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cta-button-2 {
+    width: 253px;
+    height: 66px;
+    border-radius: 54px;
+    border: 1px solid #002D4F;
+    background: #FBFBFA;
+    color: #002D4F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cta-button-2::after {
+    content: "\2192";
+    font-size: 24px;
+    width: 58px;
+    height: 58px;
+    background: #002D4F;
+    color: #FBFBFA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /* FOOTER */
 

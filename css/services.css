@@ -112,6 +112,16 @@ body {
     cursor: pointer;
 }
 
+/* MEGA MENU  */
+
+.menu-button {
+    display: none;
+}
+    
+    .mega-menu {
+    display: none;
+}
+
 /* SERVICES SECTION */
 
 .services-section {
@@ -140,7 +150,8 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 48px;
-    border: 1px solid #002D4F;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.141);
     transition: background-color 0.3s, transform 0.3s ease;
 }
 
@@ -163,7 +174,7 @@ body {
 .service:hover {
     background-color: #002D4F;
     color: #FBFBFA;
-    transform: rotate(5deg); 
+    transform: rotate(2deg); 
 }
 
 .picture {

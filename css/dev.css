@@ -112,6 +112,17 @@ body {
     cursor: pointer;
 }
 
+/* MEGA MENU  */
+
+.menu-button {
+    display: none;
+    }
+    
+    .mega-menu {
+    display: none;
+    }
+
+
 /* SERVICES SECTION */
 
 .services-section {
