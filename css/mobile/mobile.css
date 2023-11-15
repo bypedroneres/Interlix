@@ -296,8 +296,8 @@ body {
 }
 
 .card {
-    height: 100px;
     width: 100%;
+    height: 100px;
     background-color: #FBFBFA;
     text-align: center;
     color: #002D4F;
@@ -307,14 +307,15 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
-    border: 1px solid #002D4F;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.141);
     margin-bottom: 50px;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .card:hover {
     background-color: #002D4F;
     color:#FBFBFA;
+    transform: scale(1.1);
 }
 
 .card h3 {
@@ -331,6 +332,7 @@ body {
 
 .card p {
     margin-top: 20px;
+    font-weight: 300;
     margin-left: 10px;
 }
 
@@ -339,9 +341,10 @@ body {
     align-items: center;
     justify-content: center;
     text-align: left;
-    padding: 10px;
+    padding: 20px;
     font-weight: 200;
 }
+
 
 /* CTA SECTION */
 
@@ -449,32 +452,30 @@ body {
 /* BENEFITS CARDS */
 
 .benefits-card {
-    width: 396px;
-    margin-left: 20px;
-    height: 206px;
+    width: 100%;
+    height: 100%;
     border-radius: 18px;
-    border: 1px solid #002D4F;
     background: #FBFBFA;
     margin-right: 20px;
     color: #002D4F;
-    transition: background-color 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
+    transition: background-color 0.3s, transform 0.3s ease;
+
 }
 
 .benefits-card:hover{
-    background-color: #002D4F;
-    color:#FBFBFA;
+    transform: rotate(5deg);
 }
 
 .benefits-cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
+    justify-content:space-around;
 }
 
 .benefits-card-content {
-    padding: 10px;
+    padding: 20px;
 }
 
 .benefits-card-content h3 {
@@ -483,7 +484,9 @@ body {
 }
 
 .benefits-card-content p {
-    font-size: 12px;
+    font-size: 15px;
+    color: gray;
+    font-weight: 300;
 }
 
 /* CLIENTS SECTION */
@@ -515,22 +518,36 @@ body {
 }
 
 .clients-card-1 {
-    width: 194px;
+    width: 294px;
     height: 229px;
-    border-radius: 19px;
+    border-radius: 30px;
     color: #002D4F;
-    border: 1px solid #002D4F;
     background: #FBFBFA;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-23.806deg);
+    transform: rotate(-3.806deg);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
+}
+
+.clients-card-1:hover {
+    transform: rotate(10deg);
+}
+.clients-card-2:hover {
+    transform: rotate(-10deg);
+}
+.clients-card-3:hover {
+    transform: rotate(-30deg);
+}
+.clients-card-4:hover {
+    transform: rotate(-10deg);
 }
 
 .clients-card-2 {
-    width: 194px;
+    width: 294px;
     height: 229px;
-    border-radius: 19px;
+    border-radius: 30px;
     color: #FBFBFA;
     border: 1px solid #D9D9D9;
     background: #002D4F;
@@ -538,44 +555,53 @@ body {
     align-items: center;
     justify-content: center;
     transform: rotate(6.341deg);
+    transition: transform 0.6s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
 }
 
 .clients-card-3 {
-    width: 194px;
+    width: 294px;
     height: 229px;
-    border-radius: 19px;
+    border-radius: 30px;
     color: #002D4F;
-    border: 1px solid #002D4F;
     background: #FBFBFA;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(-3.363deg);
+    transform: rotate(-10.363deg);
+    transition: transform 0.6s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
 }
 
 .clients-card-4 {
-    width: 194px;
+    width: 294px;
     height: 229px;
-    border-radius: 19px;
+    border-radius: 30px;
     color: #FBFBFA;
     border: 1px solid #D9D9D9;
     background: #002D4F;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotate(7.649deg);
+    transform: rotate(3.649deg);
+    transition: transform 0.6s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
 }
 
 .clients-card-content {
-    width: 157px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
 .testimonial {
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 300;
+    
 }
 
 .clients-title {
@@ -583,15 +609,13 @@ body {
     align-items:center;
     justify-content:flex-start;
     flex-direction: row;
-    width: 130px;
-    height: 22px;
+    margin-top: 30px;
 }
 
 .clients-title h3 {
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 500;
     text-align: left;
-    font-weight: 400;
     margin-left: 10px;
 }
 
@@ -679,7 +703,7 @@ body {
 .answer-block {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: #002D4F;
     border: 1px solid #002D4F;
     background-color: #DEE0E0;
