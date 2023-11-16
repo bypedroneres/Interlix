@@ -28,11 +28,7 @@ body {
 /* NAVBAR 1 */
 
 .navbar-1 {
-    background: #002D4F;
-    height: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+display: none;
 }
 
 .nav-block {
@@ -59,7 +55,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #FBFBFA;
 }
 
 .navbar-logo img {
@@ -104,6 +103,7 @@ body {
     display: flex;
     font-weight: 500;
     border-radius: 9px;
+    margin-right: 40px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -123,11 +123,18 @@ body {
 
 /* HERO SECTION */
 
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px;
+    margin-top: 50px;
 }
 
 .cta-group {
