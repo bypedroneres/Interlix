@@ -28,16 +28,7 @@ body {
 /* NAVBAR 1 */
 
 .navbar-1 {
-    background: #002D4F;
-    height: 28px;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30px;
+display: none;
 }
 
 .nav-block {
@@ -68,7 +59,6 @@ body {
     position: fixed;
     z-index: 1000;
     background-color: #FBFBFA;
-    margin-top: 40px;
 }
 
 .navbar-logo img {
