@@ -30,9 +30,14 @@ body {
 .navbar-1 {
     background: #002D4F;
     height: 28px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 30px;
 }
 
 .nav-block {
@@ -59,7 +64,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: #FBFBFA;
+    margin-top: 40px;
 }
 
 .navbar-logo img {
@@ -104,6 +113,7 @@ body {
     display: flex;
     font-weight: 500;
     border-radius: 9px;
+    margin-right: 40px;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -125,14 +135,21 @@ display: none;
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    margin-top: 100px;
     align-items: center;
+    justify-content: space-around;
     padding: 60px;
+}
+
+.hero-section {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .cta-group {
     flex: 1;
-    text-align: left;
 }
 
 .cta-group h1 {
@@ -225,6 +242,7 @@ display: none;
     justify-content:space-around;
     flex-direction: row;
     width: 100%;
+    max-width: 1500px;
     margin-bottom: 100px;
 }
 
