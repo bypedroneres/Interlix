@@ -479,13 +479,15 @@ display: none;
     background: #FBFBFA;
     margin-right: 20px;
     color: #002D4F;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
+    border: 1px solid #002D4F;
     transition: background-color 0.3s, transform 0.3s ease;
 
 }
 
 .benefits-card:hover{
     transform: rotate(10deg);
+    background-color: #002D4F;
+    color: #FBFBFA;
 }
 
 .benefits-cards {
@@ -504,7 +506,6 @@ display: none;
 
 .benefits-card-content p {
     font-size: 10px;
-    color: gray;
     font-weight: 300;
 }
 
@@ -789,10 +790,18 @@ display: none;
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-decoration: none;
     cursor: pointer;
     position: relative;
+}
+
+.cta-button-2 p {
+    display: flex;
+    width: 100%;
+    margin-left: 45px;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .cta-button-2::after {

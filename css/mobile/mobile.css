@@ -335,13 +335,13 @@ body.mega-menu-active .fixed-header .search-button img {
     text-align: left;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.141);
     margin-bottom: 50px;
-    transition: background-color 0.5s ease, transform 0.5s ease;
+    transition: background-color 0.3s, transform 0.3s ease;
 }
 
-.card:hover {
+.benefits-card:hover{
+    transform: rotate(10deg);
     background-color: #002D4F;
-    color:#FBFBFA;
-    transform: scale(1.1);
+    color: #FBFBFA;
 }
 
 .card h3 {
