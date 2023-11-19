@@ -211,7 +211,6 @@ display: none;
     flex-direction: column;
     color: #002D4F;
     width: 100%;
-
 }
 
 .talent-section > h2 {
@@ -222,8 +221,9 @@ display: none;
 .talent-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 40px;
+    justify-content: space-around;
+    margin: 40px;
+    width: 100%;
 }
 
 .banner > img {
@@ -232,8 +232,9 @@ display: none;
 
 .talent-description {
     display: flex;
-    max-width: 600px;
+    max-width: 800px;
     text-align: left;
+    margin-right: 60px;
     flex-direction: column;
     border-radius: 19px;
     padding: 30px;

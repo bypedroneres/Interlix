@@ -4,7 +4,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     background: #FBFBFA;
-    height: 100vh;
 }
 
 /* HEADER */
@@ -23,104 +22,122 @@ body {
     align-items: center;
     padding: 10px 20px;
     color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 /* NAVBAR 1 */
 
 .navbar-1 {
-display: none;
-}
-
-.nav-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.nav-block svg {
-    margin-right: 5px;
-}
-
-.nav-text {
-    font-size: 10px;
-    font-weight: 400;
-    margin-right: 20px;
+    display: none;
 }
 
 /* NAVBAR 2 */
 
 .navbar-2 {
-    height: 83px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    background-color: #FBFBFA;
-}
-
-.navbar-logo img {
-    width: fill;
-    height: fill;
-}
-
-.navbar-buttons ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-buttons li {
-    margin-right: 20px;
-}
-
-.navbar-buttons li:hover {
-    margin-right: 20px;
-    text-decoration: underline;
-}
-
-.navbar-buttons a {
-    text-decoration: none;
-    color: #002D4F;; 
-    font-family: Montserrat;
-    font-size: 15px;
-    font-weight: 400;
-}
-
-.job-hunting-button .button {
-    width: 159px;
-    height: 41px;
-    background: #002D4F;
-    color: #FFF;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 15px;
-    display: flex;
-    font-weight: 500;
-    border-radius: 9px;
-    margin-right: 40px;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
+    display: none;
 }
 
 /* MEGA MENU  */
 
-.menu-button {
-    display: none;
-    }
-    
-    .mega-menu {
-    display: none;
-    }
+.nav-button {
+    background-color: #002D4F;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    top: 0px;
+    position: fixed;
+}
 
+.menu-button {
+    background-color:#002D4F;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    right: 20px;
+    top: 20px;
+    position: fixed;
+    color: #FBFBFA;
+    cursor: pointer;
+    z-index: 100;
+
+}
+
+.mega-menu {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #002D4F;
+    color: #FBFBFA;
+    display: none;
+    z-index: 99;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.mega-menu-columns {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 150px;
+}
+
+.mega-menu-column {
+    gap: 16px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mega-menu-column a {
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #FBFBFA;
+}
+
+.mega-menu.active {
+    display: block;
+}
+
+body.mega-menu-active .fixed-header {
+    background-color: transparent;
+    color: transparent;
+}
+
+.mega-menu-columns-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 200px;
+}
+
+body.mega-menu-active .fixed-header .search-button,
+body.mega-menu-active .fixed-header .login-button {
+    color: transparent;
+    visibility: hidden;
+}
+
+body.mega-menu-active .fixed-header .logo img,
+body.mega-menu.active .fixed-header .login-button,
+body.mega-menu-active .fixed-header .search-button img {
+    color: transparent;
+    visibility: hidden;
+}
+
+.menu-icon {
+    font-size: 40px;
+    font-weight: 100;
+}
 
 /* SERVICES SECTION */
 
@@ -130,7 +147,6 @@ display: none;
     justify-content: center;
     flex-direction: column;
     color: #002D4F;
-    padding: 1rem;
 }
 
 .title {
@@ -145,9 +161,9 @@ display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 30px;
     gap: 30px;
     margin-top: 50px;
-    width: 100%;
 }
 
 .title {
@@ -155,8 +171,8 @@ display: none;
     align-items: flex-start;
     justify-content:center;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    width: 40rem;
+    height: 15rem;
 }
 
 .service {
@@ -166,7 +182,7 @@ display: none;
     transition: transform 0.6s ease;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
     cursor: pointer;
-    max-width: 1000px;
+    max-width: 40rem;
 }
 
 .service:hover {
@@ -183,10 +199,12 @@ display: none;
 
 .service-content h2 {
     font-weight: 500;
+    margin-top: 0px;
 }
 
 .service-content p {
     font-weight: 300;
+    margin-top: 0px;
 }
 
 .service-content img {
@@ -208,50 +226,12 @@ display: none;
     height: 360px;
 }
 
-/* BUTTON STYLES */
-
-.hero-button {
-    width: 253px;
-    height: 66px;
-    border-radius: 54px;
-    border: 1px solid #002D4F;
-    background: #FBFBFA;
-    color: #002D4F;
-    text-align: center;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    cursor: pointer;
-    position: relative;
-}
-
-.hero-button::after {
-    content: "\2192";
-    font-size: 24px;
-    width: 58px;
-    height: 58px;
-    background: #002D4F;
-    color: #FBFBFA;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    right: 4px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 /* CTA SECTION 2 */
 
 .cta-section-2 {
     background-color: #002D4F;
     color: #FBFBFA;
-    padding: 40px;
+    padding: 20px;
 }
 
 .cta-content-2 {
@@ -274,7 +254,7 @@ display: none;
 }
 
 .cta-text-2 h3 {
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -314,7 +294,6 @@ display: none;
     transform: translateY(-50%);
 }
 
-
 /* FOOTER */
 
 .footer {
@@ -323,27 +302,28 @@ display: none;
     display: flex;
     justify-content: space-around;
     color: #002D4F;
-
+    flex-direction: column;
 }
 
 .footer-block {
     text-align: left;
+    padding: 20px;
+
 }
 
 .footer h4 {
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .footer p {
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .footer svg {
     cursor: pointer;
 }
 
+
 .footer-block a {
     text-decoration: none;
 }
-
-
