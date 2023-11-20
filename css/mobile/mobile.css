@@ -248,6 +248,7 @@ body.mega-menu-active .fixed-header .search-button img {
 
 .service-card {
     width: 100%;
+    text-decoration: none;
     height: 247px;
     flex-wrap: wrap;
     border-radius: 22px;
@@ -809,7 +810,9 @@ body.mega-menu-active .fixed-header .search-button img {
 .cta-button-2 p {
 display: flex;
 width: 100%;
-margin-left: 45px;
+font-size: 12px;
+margin-left: 30px;
+color: #002D4F;
 align-items: center;
 justify-content: flex-start;
 }
