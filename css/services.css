@@ -166,11 +166,6 @@ display: none;
     font-size: 20px;
 }
 
-.service-content p {
-    font-size: 15px;
-    font-weight: 300;
-}
-
 .service:hover {
     background-color: #002D4F;
     color: #FBFBFA;
@@ -205,10 +200,14 @@ display: none;
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-decoration: none;
     cursor: pointer;
     position: relative;
+}
+
+.hero-button p {
+    margin-left: 50px;
 }
 
 .hero-button::after {

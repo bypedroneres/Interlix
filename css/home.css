@@ -148,11 +148,7 @@ display: none;
     color: #002D4F;
 }
 
-.cta-group p {
-    font-size: 20px;
-    font-weight: 300;
-    color: gray;
-}
+
 
 .image-group {
     flex: 1;
@@ -238,6 +234,8 @@ display: none;
 
 .service-card {
     width: 400px;
+    text-decoration: none;
+    cursor: pointer;
     height: 247px;
     border-radius: 22px;
     background: #FBFBFA;
@@ -261,7 +259,7 @@ display: none;
     align-items: center;
     justify-content: space-between;
     height: 37px;
-    width: 350px;
+    width: 360px;
 }
 
 .service-card-title h2 {
@@ -751,6 +749,10 @@ display: none;
     background-color: #002D4F;
     color: #FBFBFA;
     padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .cta-content-2 {
@@ -784,6 +786,7 @@ display: none;
     border: 1px solid #002D4F;
     background: #FBFBFA;
     color: #002D4F;
+    font-weight: 400;
     text-align: center;
     font-family: Montserrat;
     font-size: 20px;
@@ -803,6 +806,7 @@ display: none;
     align-items: center;
     justify-content: flex-start;
 }
+
 
 .cta-button-2::after {
     content: "\2192";

@@ -279,6 +279,7 @@ body.mega-menu-active .fixed-header .search-button img {
     font-size: 20px;
     margin-right: 100px;
     height: 37px;
+    font-weight: 400;
     width: 250px;
 }
 
@@ -799,11 +800,20 @@ body.mega-menu-active .fixed-header .search-button img {
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-decoration: none;
     cursor: pointer;
     position: relative;
 }
+
+.cta-button-2 p {
+display: flex;
+width: 100%;
+margin-left: 45px;
+align-items: center;
+justify-content: flex-start;
+}
+
 
 .cta-button-2::after {
     content: "\2192";
