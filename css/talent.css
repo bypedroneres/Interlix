@@ -133,7 +133,7 @@ display: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px;
+    padding: 100px;
     margin-top: 50px;
 }
 
@@ -160,8 +160,8 @@ display: none;
 }
 
 .image-group img {
-    width: 367px;
-    height: 427px;
+    width: 467px;
+    height: 527px;
 }
 
 /* BUTTON STYLES */
@@ -227,7 +227,7 @@ display: none;
 }
 
 .banner > img {
-    width: 20rem;
+    width: 30rem;
 }
 
 .talent-description {

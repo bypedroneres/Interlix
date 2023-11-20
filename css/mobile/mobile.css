@@ -255,7 +255,13 @@ body.mega-menu-active .fixed-header .search-button img {
     background: #FBFBFA;
     display: flex;
     align-items: center;
-    justify-content: center;
+    transition: transform 0.6s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.11); 
+}
+
+.service-card:hover {
+    transform: rotate(5deg);
+    color: #FBFBFA;
 }
 
 .service-card-content {

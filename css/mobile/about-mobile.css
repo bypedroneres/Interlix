@@ -247,12 +247,20 @@ body.mega-menu-active .fixed-header .search-button img {
     justify-content: space-around;
     flex-direction: column;
     width: 100%;
+    gap: 30px;
 }
 
 .profile-card {
     display: flex;
     flex-direction: column;
-}
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-card:hover {
+    transform: scale(1.1);
+  }
+  
+
 
 .profile-card img {
     height: 20rem;
@@ -294,7 +302,7 @@ body.mega-menu-active .fixed-header .search-button img {
 }
 
 .college-section img {
-    height: 6rem;
+    width: 150px;
     padding: 100px;
     margin-right: 30px;
     filter: grayscale(1);
@@ -420,3 +428,8 @@ body.mega-menu-active .fixed-header .search-button img {
 .footer-block a {
     text-decoration: none;
 }
+
+.profile-card a {
+    text-decoration: none;
+    color: #002D4F;
+  }
