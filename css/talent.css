@@ -53,14 +53,13 @@ display: none;
 .navbar-2 {
     height: 83px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     position: fixed;
     z-index: 1000;
     background-color: #FBFBFA;
 }
-
 .navbar-logo img {
     width: fill;
     height: fill;
