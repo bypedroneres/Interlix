@@ -212,6 +212,10 @@ display: none;
     margin-left: 50px;
 }
 
+.service-content h3 {
+    font-weight: 400;
+}
+
 .hero-button::after {
     content: "\2192";
     font-size: 24px;
