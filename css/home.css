@@ -142,6 +142,12 @@ display: none;
     flex: 1;
 }
 
+.cta-group h3 {
+    font-size: 15px;
+    font-weight: 400;
+    color: gray;
+}
+
 
 .cta-group h1 {
     font-size: 30px;

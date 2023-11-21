@@ -298,6 +298,10 @@ display: none;
     background-color: #002D4F;
     color: #FBFBFA;
     padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .cta-content-2 {
@@ -331,17 +335,28 @@ display: none;
     border: 1px solid #002D4F;
     background: #FBFBFA;
     color: #002D4F;
+    font-weight: 400;
     text-align: center;
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 500;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-decoration: none;
     cursor: pointer;
     position: relative;
 }
+
+.cta-button-2 p {
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 
 .cta-button-2::after {
     content: "\2192";
